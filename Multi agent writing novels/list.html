@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/style.css">
+	<title>Multi agent Writing Novels</title>
+	<style>
+		.container {
+			display: flex;
+			flex-direction: column;
+			/* Change to vertical direction layout */
+			align-items: center;
+			height: 100vh;
+		}
+
+		#userInput,
+		#outputText {
+    width: 70%; /* Enlarge the text areas */
+    padding: 10px; 
+    font-size: 16px; 
+    margin-bottom: 10px; /* Add spacing */
+    text-align: center; /* Center the text within the text areas */
+}
+	</style>
+</head>
+
+<body>
+	<ul class="top1 auto clearfix">
+		<li><a href="./index.html">Home Page1111111</a></li>
+		<li><a href="./list.html">Multi agent111 Writing Novels</a></li>
+		<li><a href="">More Information</a></li>
+	</ul>
+	<div class="banner auto">
+		<img src="./images/11.jpeg" alt="">
+	</div>
+	<div class="content">
+		<div class="container">
+			<input type="text" id="userInput" placeholder="Enter text">
+			<select id="authorStyle">
+				<option value="author1">Author Style 1</option>
+				<option value="author2">Author Style 2</option>
+				<option value="author3">Author Style 3</option>
+			</select>
+			<button onclick="submitText()">Submit</button>
+			<textarea id="outputText" rows="6" placeholder="Output Text"></textarea>
+		</div>
+	</div>
+
+	<div class="footer auto">
+		Multi-agent Writing Novels
+	</div>
+
+	<script>
+		function submitText() {
+			var userInput = document.getElementById('userInput').value;
+			var authorStyle = document.getElementById('authorStyle').value;
+			console.log('User input: ', userInput);
+			console.log('Selected author style: ', authorStyle);
+			// You can add logic here to process user input and author style selection
+			// Let's assume the processed text result is stored in the variable 'output'
+			var output = "Processed text result";
+			document.getElementById('outputText').value = output;
+		}
+	</script>
+</body>
+
+</html>
