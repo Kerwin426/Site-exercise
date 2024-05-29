@@ -11,6 +11,23 @@
         <title>HTML-site</title>
     </head>
     <body>
+        <header>
+            <h1>第一标题，只建议用一次</h1>
+        </header>
+
+        <nav>
+            <!-- 本站统一的导航栏 -->
+            <ul>
+              <li><a href="../test-site/index.html">主页</a></li>
+              <!-- 共 n 个导航栏项目，省略…… -->
+            </ul>
+      
+            <form>
+              <!-- 搜索栏是站点内导航的一个非线性的方式。 -->
+              <input type="search" name="q" placeholder="要搜索的内容" />
+              <input type="submit" value="搜索" />
+            </form>
+          </nav>    
         <p>This is a paragraph</p>
         <em>Thie is also a paragraph</em>
         <p>My cat is <strong>very</strong> grumpy</p>
@@ -30,7 +47,7 @@
         <input type="text"/>
 
         <p>在html中用&lt;p&gt;表示段落</p>
-        <a href="https://www.bilibili.com/" title="这是b站的网址"><h1>第一标题，只建议用一次</h1></a>
+        <a href="https://www.bilibili.com/" title="这是b站的网址">bilibili</a><br/>
         <a href="../test-site/index.html" title="another html">初始练习页面</a>
         <h2>后续的标题都要按顺序来进行</h2>
         <span style="font-size: 16px; margin: 21px 0;display: block;">这是顶级标题吗？，这里的span元素是没有
@@ -46,7 +63,31 @@
         </dl>
         <p><abbr title="美国国家航空航天局">NASA</abbr> 做了一些动人心弦的事情。</p>
         <time datetime="2024-05-29" style="text-align: center;  margin: auto; display: block;">29 May 2024</time>
+        <div class="shopping-cart">
+            <p>div是一个块级无语义元素，应仅用于找不到更好的块级元素时，或者不想增加特定的意义时。例如，一个电子商务网站页面上有一个一直显示的购物车组件。
+
+            </p>
+        </div>
         
+        <main>
+            <article>
+                <p>这里是网站内容</p>
+            </article>
+            <aside>
+                <ul>
+                    <li>
+                        aside是侧边栏，由于没有设置css，所以导致侧边栏没有显示到右侧
+                    </li>
+                </ul>
+            </aside>
+        </main>
+
+
+        <footer>
+            <hr/>
+            <time datetime="2024-05-29"style="text-align: center;  margin: auto; display: block;">29 May 2024</time>
+            <p>@ 保留所有权利</p>
+        </footer>
         <script src="scripts/scriptes.js" defer></script>
     </body>
 </html>
