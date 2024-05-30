@@ -1,4 +1,10 @@
-p,title,em,input{
+title,em,input{
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+p{
+    background-image: url("../images/momo.png");
     text-align: center;
     display: block;
     margin: auto;
