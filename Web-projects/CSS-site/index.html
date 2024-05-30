@@ -4,22 +4,26 @@
     <meta charset="utf-8" />
     <title>开始学习 CSS</title>
     <link rel="icon" type="images/x-icon" href="images/images/shantianliang.png"/>
+    <link rel="stylesheet" href="styles/styles.css"/>
   </head>
 
   <body>
     <h1>我是一级标题</h1>
 
-    <p>
+    <p class="special">
       这是一个段落文本。在文本中有一个 <span>span element</span> 并且还有一个
-      <a href="http://example.com">链接</a>.
+      <a href="http://example.com" title="链接">链接</a>.
     </p>
 
     <p>这是第二段。包含了一个 <em>强调</em> 元素。</p>
 
-    <ul>
+    <ol>
       <li>项目 1</li>
-      <li>项目 2</li>
+      <li class="special">项目 2</li>
       <li>项目 <em>三</em></li>
-    </ul>
+    </ol>
+    <div class="outer"><div class="box">内部盒子的宽度为90%-30</div></div>
+
+    <div class="box1"></div>
   </body>
 </html>
